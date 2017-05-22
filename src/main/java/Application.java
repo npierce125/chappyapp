@@ -148,11 +148,11 @@ public class Application
 			}
 			
 			LOG.info("Connection secured with HTTPS");
-        	return true;
-        }
+			return true;
+    	}
        
-        LOG.warn("Keystore file doesn't exist");
-        return false;
+		LOG.warn("Keystore file doesn't exist");
+		return false;
 	}
 	
 	/**
