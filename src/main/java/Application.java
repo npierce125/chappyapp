@@ -66,7 +66,7 @@ public class Application
 		if(!bindPort(port))
 			return false;
       
-       //Only need to make sure HTTPS is enabled in production mode
+		//Only need to make sure HTTPS is enabled in production mode
 		if(!DEV_MODE && !secure())
 			return false;
        
@@ -135,7 +135,7 @@ public class Application
 	public boolean secure()
 	{
 		if(keystoreExists())
-        {
+		{
 			try
 			{
 				Spark.secure(KEY_STORE_PATH, KEY_STORE_PASS, null, null);
