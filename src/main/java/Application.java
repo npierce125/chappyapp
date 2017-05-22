@@ -89,7 +89,7 @@ public class Application
 	 */
 	private boolean setupRoutes()
 	{
-		Spark.get("/hello", (request, response) -> "Hello World!");
+		Spark.get("/hello", (request, response) -> "Hello World!!");
 		
 		return true;
 	}
